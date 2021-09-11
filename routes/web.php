@@ -11,6 +11,13 @@
 |
 */
 
+use App\Events\SendMessage;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('send-message/{message}', function($message) {
+    broadcast(new SendMessage($message));
 });

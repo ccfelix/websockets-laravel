@@ -6,6 +6,8 @@
 
         <title>Laravel</title>
 
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
@@ -80,7 +82,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div id="title" class="title m-b-md">
                     Laravel
                 </div>
 
@@ -96,5 +98,13 @@
                 </div>
             </div>
         </div>
+        <script src="{{ asset('/js/app.js') }}"></script>
+        <script>
+            Echo.channel('channel-send-message')
+                .listen('.send-message', e => {
+                    console.log(e);
+                    document.getElementById('title').innerHTML = e.message;
+                });
+        </script>
     </body>
 </html>

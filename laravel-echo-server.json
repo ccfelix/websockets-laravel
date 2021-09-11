@@ -1,0 +1,34 @@
+{
+	"authHost": "https://localhost",
+	"authEndpoint": "/broadcasting/auth",
+	"clients": [
+		{
+			"appId": "0d32d2d3d2d598ca",
+			"key": "6c6f832604cc145c12c0433f3269b184"
+		}
+	],
+	"database": "redis",
+	"databaseConfig": {
+		"redis": {}
+	},
+	"devMode": true,
+	"host": null,
+	"port": "6001",
+	"protocol": "https",
+	"socketio": {},
+	"secureOptions": 67108864,
+	"sslCertPath": "D:\\UltraWebServer\\core\\apache2\\server_certs\\server.crt",
+	"sslKeyPath": "D:\\UltraWebServer\\core\\apache2\\server_certs\\server.key",
+	"sslCertChainPath": "",
+	"sslPassphrase": "",
+	"subscribers": {
+		"http": true,
+		"redis": true
+	},
+	"apiOriginAllow": {
+		"allowCors": true,
+		"allowOrigin": "*",
+		"allowMethods": "GET, POST",
+		"allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requested-With, Accept, Authorization, X-CSRF-TOKEN, X-Socket-Id"
+	}
+}
