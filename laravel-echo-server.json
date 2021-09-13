@@ -1,5 +1,5 @@
 {
-	"authHost": "https://localhost",
+	"authHost": "http://localhost",
 	"authEndpoint": "/broadcasting/auth",
 	"clients": [
 		{
@@ -14,7 +14,7 @@
 	"devMode": true,
 	"host": null,
 	"port": "6001",
-	"protocol": "https",
+	"protocol": "http",
 	"socketio": {},
 	"secureOptions": 67108864,
 	"sslCertPath": "D:\\UltraWebServer\\core\\apache2\\server_certs\\server.crt",
