@@ -6,6 +6,7 @@
 /public/css
 /public/js
 /public/mix-manifest.json
+laravel-echo-server.lock
 .env
 .env.backup
 .phpunit.result.cache
